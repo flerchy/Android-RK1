@@ -12,21 +12,16 @@
 
     <TextView
         android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text="TextView"
+        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="87dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
 
     <Button
-        android:text="Button"
+        android:text="Выберите город"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button"
@@ -35,18 +30,21 @@
         android:onClick="chooseCity" />
 
     <Button
-        android:text="Button"
+        android:text="Запустить в фоновом режиме"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button1"
         android:layout_marginTop="175dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="updateStart"/>
 
     <Button
-        android:text="Button"
+        android:text="Отключить фоновый режим"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
         android:layout_marginTop="225dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="updateStop"/>
+
 </RelativeLayout>

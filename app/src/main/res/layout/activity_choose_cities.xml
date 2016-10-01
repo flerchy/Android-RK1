@@ -17,7 +17,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="84dp"
-        android:id="@+id/button_city_1" />
+        android:id="@+id/button_city_1"
+        android:onClick="sendCity1" />
 
     <Button
         android:text="Button"
@@ -26,7 +27,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="134dp"
-        android:id="@+id/button_city_2" />
+        android:id="@+id/button_city_2"
+        android:onClick="sendCity2" />
 
     <Button
         android:text="Button"
@@ -35,7 +37,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="184dp"
-        android:id="@+id/button_city_3" />
+        android:id="@+id/button_city_3"
+        android:onClick="sendCity3" />
 
     <Button
         android:text="Button"
@@ -44,7 +47,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="234dp"
-        android:id="@+id/button_city_4" />
+        android:id="@+id/button_city_4"
+        android:onClick="sendCity4" />
 
     <Button
         android:text="Button"
@@ -53,6 +57,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="284dp"
-        android:id="@+id/button_city_5" />
+        android:id="@+id/button_city_5"
+        android:onClick="sendCity5" />
 
 </RelativeLayout>
