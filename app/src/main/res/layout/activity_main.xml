@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingLeft="70dp"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingTop="100dp"
+    android:orientation="vertical"
     tools:context="com.example.flerchy.rk1.MainActivity">
 
     <TextView
@@ -15,17 +16,15 @@
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="87dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
+        android:id="@+id/city_weather_view" />
 
     <Button
         android:text="Выберите город"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_marginTop="125dp"
+        android:id="@+id/choose_city_button"
         android:layout_centerHorizontal="true"
         android:onClick="chooseCity" />
 
@@ -33,8 +32,7 @@
         android:text="Запустить в фоновом режиме"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button1"
-        android:layout_marginTop="175dp"
+        android:id="@+id/background_mode_on_button"
         android:layout_centerHorizontal="true"
         android:onClick="updateStart"/>
 
@@ -42,9 +40,8 @@
         android:text="Отключить фоновый режим"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button2"
-        android:layout_marginTop="225dp"
+        android:id="@+id/background_mode_off_button"
         android:layout_centerHorizontal="true"
         android:onClick="updateStop"/>
 
-</RelativeLayout>
+</LinearLayout>
