@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         registerReceiver(br, filter);
 
 
-        h.postDelayed(runnable, delay);
+
 
 
     }
@@ -167,11 +167,11 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     public void updateStart(View view) {
-
+        h.postDelayed(runnable, delay);
     }
 
     public void updateStop( View view) {
-
+        h.removeCallbacks(runnable);
     }
 
     /*@Override
@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
         //editor.putString("WEATHER", tv.getText().toString() );
         editor.commit();
         unregisterReceiver(br);
-        h.removeCallbacks(runnable);
+
 
     }
 }

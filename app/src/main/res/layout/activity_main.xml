@@ -22,7 +22,7 @@
 
     <Button
         android:text="Выберите город"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:id="@+id/choose_city_button"
         android:layout_centerHorizontal="true"
@@ -30,7 +30,7 @@
 
     <Button
         android:text="Запустить в фоновом режиме"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:id="@+id/background_mode_on_button"
         android:layout_centerHorizontal="true"
@@ -38,7 +38,7 @@
 
     <Button
         android:text="Отключить фоновый режим"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:id="@+id/background_mode_off_button"
         android:layout_centerHorizontal="true"

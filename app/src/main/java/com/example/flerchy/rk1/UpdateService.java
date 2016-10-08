@@ -53,6 +53,11 @@ public class UpdateService extends IntentService {
         context.startService(intent);
     }
 
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        return super.onStartCommand(intent, flags, startId);
+    }
+
     public static void startActionSpringfield(Context context, String param1) {
         Intent intent = new Intent(context, UpdateService.class);
         intent.setAction(ACTION_SPRINGFIELD);
